@@ -1,0 +1,28 @@
+@use 'assets/variables';
+
+body {
+  margin: 0;
+  font-family: variables.$font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: variables.$hint;
+
+  box-sizing: border-box;
+
+  @media (max-width: variables.$mobile) {
+    font-size: 14px;
+  }
+}
+
+h3,
+p,
+span,
+button {
+  font-family: variables.$font;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

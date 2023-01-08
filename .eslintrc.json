@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["react-app", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": ["error", {"endOfLine": "auto"}]
+  }
+}

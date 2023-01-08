@@ -1,0 +1,21 @@
+@use 'assets/variables';
+@use 'assets/mixins';
+
+.container {
+  @include mixins.flex($align: center, $justify: flex-start, $gap: 1rem);
+
+  padding: 0.4rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid variables.$main-border;
+  }
+
+  & .image {
+    min-width: 4.5rem;
+    min-height: 6rem;
+  }
+
+  & .remove {
+    cursor: pointer;
+  }
+}

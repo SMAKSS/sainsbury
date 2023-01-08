@@ -1,0 +1,6 @@
+<svg role="img" label="View mini basket" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"
+  style="display: inline-block; vertical-align: middle; width: 20px; height: 20px;">
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M6 9V7H4.833l-.666 8h11.666l-.666-8H14v2h-2V7H8v2H6zm9-4h2l1 12H2L3 5h3V1h8v4h1zm-3 0H8V3h4v2z" fill="#000">
+  </path>
+</svg>

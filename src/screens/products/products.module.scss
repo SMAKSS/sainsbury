@@ -1,0 +1,45 @@
+@use 'assets/variables';
+@use 'assets/mixins';
+
+.container {
+  @include mixins.grid(
+    $columns: repeat(4, 1fr),
+    $gap: 20px,
+    $alignItems: stretch
+  );
+
+  background-color: variables.$hint;
+
+  margin: calc(2rem + 6.5rem) 1rem 2rem;
+
+  @media (max-width: variables.$mid) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: variables.$mobile) {
+    @include mixins.flex($dir: column);
+  }
+
+  & .skeleton {
+    @include mixins.grid(
+      $columns: repeat(4, 1fr),
+      $gap: 20px,
+      $alignItems: stretch
+    );
+
+    & div {
+      @include mixins.skeleton;
+
+      display: block;
+
+      background-color: variables.$white;
+
+      min-height: 22rem;
+      min-width: 16.5rem;
+    }
+  }
+}

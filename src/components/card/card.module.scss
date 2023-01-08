@@ -1,0 +1,30 @@
+@use 'assets/variables';
+@use 'assets/mixins';
+
+.container {
+  @include mixins.flex(
+    $align: flex-start,
+    $justify: flex-start,
+    $dir: column,
+    $gap: 8px
+  );
+
+  background-color: variables.$white;
+
+  padding: 1rem;
+
+  border: 1px solid variables.$main-border;
+  border-radius: 5px;
+
+  & .image {
+    align-self: center;
+
+    min-height: 8rem;
+  }
+
+  & > :last-child {
+    width: 100%;
+
+    margin-top: auto;
+  }
+}

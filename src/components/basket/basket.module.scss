@@ -1,0 +1,36 @@
+@use 'assets/variables';
+@use 'assets/mixins';
+
+.icon {
+  @include mixins.flex($dir: column, $align: center);
+
+  position: relative;
+
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: variables.$hint;
+  }
+
+  & .count {
+    @include mixins.flex($justify: center, $align: center);
+
+    font-size: 0.7rem;
+
+    position: absolute;
+
+    color: variables.$white;
+    background-color: variables.$error;
+
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+
+    padding: 0.3rem 0.5rem;
+
+    border-radius: 50%;
+
+    transform: translate(50%, -50%);
+  }
+}

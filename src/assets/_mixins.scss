@@ -1,0 +1,54 @@
+@mixin flex(
+  $align: null,
+  $justify: null,
+  $dir: null,
+  $flex: null,
+  $gap: null,
+  $wrap: null
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $dir;
+  flex: $flex;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin grid(
+  $columns: null,
+  $autoColumns: null,
+  $autoFlow: null,
+  $gap: null,
+  $columnGap: null,
+  $rowGap: null,
+  $alignItems: null,
+  $rows: null,
+  $justifyItems: null,
+  $justifyContent: null
+) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+  column-gap: $columnGap;
+  row-gap: $rowGap;
+  align-items: $alignItems;
+  justify-items: $justifyItems;
+  justify-content: $justifyContent;
+  grid-auto-columns: $autoColumns;
+  grid-auto-flow: $autoFlow;
+}
+
+@mixin skeleton() {
+  animation: skeleton-loading 1s linear infinite alternate;
+
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 15%, 85%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+}

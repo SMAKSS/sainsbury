@@ -1,0 +1,49 @@
+@use 'assets/variables';
+
+.button {
+  display: inline-block;
+
+  background-color: variables.$black;
+  color: variables.$white;
+
+  height: 2.5rem;
+
+  font-size: 0;
+  text-align: center;
+
+  padding: 0 2rem;
+
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+
+  transition: opacity 0.2s cubic-bezier(1, 0, 0, 1), color 0.2s;
+
+  cursor: pointer;
+
+  &[disabled] {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    & span {
+      pointer-events: none;
+    }
+  }
+
+  & .label {
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+
+    user-select: none;
+
+    @media (max-width: 767px) {
+      font-size: 0.9rem;
+    }
+  }
+}

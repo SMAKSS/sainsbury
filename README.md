@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# [Sainsbury's code challenge](https://jsainsburyplc.github.io/front-end-test/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a single-page application consisting of two views the navbar and the
+products view.
 
-## Available Scripts
+- The navbar contains a single basket button which is responsible for showing
+  the user's active basket based on the products the user adds.
+- The products view contains a bunch of products fetched from the provided
+  end-point and shows all the product details and a button to add them to the
+  basket.
 
-In the project directory, you can run:
+> **Note:** For the sake of time, there is no quantity base for the products,
+> and users can only add them once to the basket.
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Tests:** I liked to write tests for each component and its functionality, but
+there was not much time to do so!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run app locally
 
-### `yarn test`
+- Install all the dependencies by using on of the following commands:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Yarn:
 
-### `yarn build`
+  ```bash
+  yarn
+  ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  or
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ```bash
+  yarn install
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  NPM:
 
-### `yarn eject`
+  ```bash
+  npm i
+  ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  or
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ```bash
+  npm install
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Now you can run it locally with on of the following commands:\
+  Yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  ```bash
+  yarn start
+  ```
 
-## Learn More
+  NPM:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  ```bash
+  npm run start
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  **NOTE:** There are two other useful commands:
 
-### Code Splitting
+  - Formatting with Prettier
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Yarn:
 
-### Analyzing the Bundle Size
+    ```bash
+    yarn format
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    NPM:
 
-### Making a Progressive Web App
+    ```bash
+    npm run format
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  - Linting with ESlint
 
-### Advanced Configuration
+    Yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```bash
+    yarn lint
+    ```
 
-### Deployment
+    NPM:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    npm run lint
+    ```
